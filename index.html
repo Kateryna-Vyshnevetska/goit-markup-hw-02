@@ -4,30 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Studio</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+<body class="page">
   <!-- Sites header -->
-  <header class="header">
-    <a href="./index.html"> <span>Web</span>Studio</a>
+  <header class="page-header">
+
+    <a class="logo" href="./index.html"> <span class="part-logo">Web </span>Studio</a>
   
     <!-- Main menu navigation -->
     <nav>
-      <ul class="navigation">
-        <li><a href="./index.html">Студия</a></li>
-        <li><a href="./portfolio.html">Портфолио</a></li>
-        <li><a href="">Контакты</a></li>
+      <ul class="site-nav list">
+        <li><a class="link current" href="./index.html">Студия</a></li>
+        <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+        <li><a class="link" href="">Контакты</a></li>
       </ul>
     </nav>
-    <ul>
+    <ul class="auth-site list">
       <li>
-        <a href="mailto:info@devstudio.com">
+        <a class="link" href="mailto:info@devstudio.com">
           <img src="./img/logo-email.svg" alt="">
           info@devstudio.com
         </a>
       </li>
       <li>
-        <a href="tel:+380961111111">
+        <a class="link" href="tel:+380961111111">
           <img src="./img/logo-tel.svg" alt="">
           +38 096 111 11 11
         </a>
@@ -38,37 +41,37 @@
   <main>
     <!-- Order service section -->
     <div>
-     <section>
+     <section class="hero-title">
        <h1>Эффективные решения для вашего бизнеса</h1>
-       <a href="">Заказать услугу</a>
+       <a class="button primary" href="">Заказать услугу</a>
      </section>
    </div>
    
-   <!-- Skill section -->
+   <!-- Future section -->
    <div>
-     <section>
+     <section class="section">
        <!-- h2 will be hidden in css -->
-       <h2>Our skills</h2> 
-       <ul>
+       <h2 class="section-title">Our skills</h2> 
+       <ul class="feature-list list">
          <li>
            <img src="./img/antenna.svg" alt="icon antenna">
-           <h3>Внимание к деталям</h3>
-           <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+           <h3 class="title">Внимание к деталям</h3>
+           <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
          </li>
          <li>
            <img src="./img/clock.svg" alt="icon clock">
-           <h3>Пунктуальность</h3>
-           <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+           <h3 class="title">Пунктуальность</h3>
+           <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
          </li>
          <li>
            <img src="./img/diagram.svg" alt="icon diagram">
-           <h3>Планирование</h3>
-           <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+           <h3 class="title">Планирование</h3>
+           <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
          </li>
          <li>
            <img src="./img/astronaut.svg" alt="icon astronaut">
-           <h3>Современные технологии</h3>
-           <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+           <h3 class="title">Современные технологии</h3>
+           <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
          </li>
        </ul>
      </section>
@@ -76,23 +79,23 @@
    
    <!-- Our work section-->
    <div>
-     <section>
-       <h2>Чем мы занимаемся</h2>
+     <section class="section">
+       <h2 class="section-title">Чем мы занимаемся</h2>
    
-       <ul>
+       <ul class="work-list list">
          <li>
              <img src="./img/deskapp.png" alt="Фотография компьютера" width="370">
-             <h3>Десктопные приложения</h3>
+             <h3 class="title">Десктопные приложения</h3>
          </li>
    
          <li>
              <img src="./img/mobapp.png" alt="Фотография телефона" width="370">
-             <h3>Мобильные приложения</h3>
+             <h3 class="title">Мобильные приложения</h3>
          </li>
    
          <li>
              <img src="./img/designer.png" alt="Фотография монитора" width="370">
-             <h3>Дизайнерские решения</h3>
+             <h3 class="title">Дизайнерские решения</h3>
          </li>
        </ul>
      </section>
@@ -100,14 +103,14 @@
    
    <!-- Our team section-->
    <div>
-     <section>
-       <h2>Наша команда</h2>
+     <section class="section team">
+       <h2 class="section-title">Наша команда</h2>
    
-       <ul>
+       <ul class="team-list list">
          <li>
            <img src="./img/team/person1.png" alt="Фото Джона Смита" width="270">
-           <h3>John Smith</h3>
-           <span>Product Designer</span>
+           <h3 class="title">John Smith</h3>
+           <p class="profession">Product Designer</p>
            <ul>
              <li>
                <a href="" aria-label="Instagram link">
@@ -129,8 +132,8 @@
          </li>
          <li>
            <img src="./img/team/person2.png" alt="Фото Марты Стюарт" width="270">
-            <h3>Marta Stewart</h3>
-           <span>Frontend Developer</span>
+            <h3 class="title">Marta Stewart</h3>
+           <p class="profession">Frontend Developer</p>
            <ul>
             <li>
               <a href="" aria-label="Instagram link">
@@ -152,8 +155,8 @@
          </li>
          <li>
            <img src="./img/team/person3.png" alt="Фото Роберта Джекиса" width="270">
-            <h3>Robert Jakis</h3>
-           <span>Marketing</span>
+            <h3 class="title">Robert Jakis</h3>
+           <p class="profession">Marketing</p>
            <ul>
             <li>
               <a href="" aria-label="Instagram link">
@@ -175,8 +178,8 @@
          </li>
          <li>
            <img src="./img/team/person4.png" alt="Фото Мартина До" width="270">
-            <h3>Martin Doe</h3>
-            <span>UI Designer</span>
+            <h3 class="title">Martin Doe</h3>
+            <p class="profession">UI Designer</p>
             <ul>
             <li>
               <a href="" aria-label="Instagram link">
@@ -202,10 +205,10 @@
    
    <!-- Regular customers section-->
    <div>
-     <section>
-       <h2>Постоянные клиенты</h2>
+     <section class="section">
+       <h2 class="section-title">Постоянные клиенты</h2>
    
-       <ul>
+       <ul class="customers-list list">
          <li>
            <a href="">
              <img src="./img/clients/logo1.svg" alt="customer logo 1">
